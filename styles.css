@@ -196,7 +196,7 @@ html, body {
 
 /* Product cards */
 .prod-grid {
-  display:grid; grid-template-columns:repeat(4,1fr); gap:16px; flex:1;
+  display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
 }
 .prod-card {
   background:var(--light); border:1.5px solid var(--border);
