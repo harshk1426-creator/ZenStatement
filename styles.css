@@ -222,6 +222,73 @@ html, body {
 .prod-card p  { font-size:14px; color:var(--muted); line-height:1.7; }
 
 /* ═══════════════════════════
+   SLIDE — CURRENT GTM OPS
+═══════════════════════════ */
+.cur-gtm-grid {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:14px; flex:1;
+}
+
+.cur-card {
+  background:var(--light); border:1.5px solid var(--border);
+  border-radius:18px; padding:22px 20px;
+  display:flex; flex-direction:column; gap:14px;
+  transition:border-color .22s, box-shadow .22s, transform .22s;
+  position:relative; overflow:hidden;
+}
+.cur-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--teal-d));
+  opacity:0; transition:opacity .22s;
+}
+.cur-card:hover { border-color:var(--teal-line); transform:translateY(-4px); box-shadow:0 10px 28px rgba(62,207,178,.1); }
+.cur-card:hover::before { opacity:1; }
+.cur-card-accent { background:rgba(62,207,178,.05); border-color:rgba(62,207,178,.25); }
+.cur-card-accent::before { opacity:1; }
+
+.cur-icon-wrap {
+  width:52px; height:52px; border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:26px; flex-shrink:0;
+}
+.ci-web     { background:#e8f4fd; }
+.ci-comm    { background:#fff3ee; }
+.ci-founder { background:rgba(62,207,178,.12); }
+.ci-out     { background:#f0eeff; }
+
+.cur-card-body { display:flex; flex-direction:column; gap:8px; flex:1; }
+.cur-card-body h3 { font-size:15px; font-weight:700; color:var(--ink); letter-spacing:-.01em; }
+.cur-card-body p  { font-size:13px; color:var(--muted); line-height:1.7; flex:1; }
+
+.cur-tag {
+  display:inline-block; font-size:10px; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase;
+  padding:3px 10px; border-radius:100px; width:fit-content;
+  background:var(--light2); color:var(--muted);
+  margin-top:auto;
+}
+.ct-teal { background:rgba(62,207,178,.15); color:var(--teal-d); }
+
+/* Stat bar at bottom */
+.cur-stat-bar {
+  display:flex; align-items:center; gap:24px;
+  background:var(--light); border:1.5px solid var(--border);
+  border-radius:14px; padding:16px 28px;
+}
+.cur-stat { display:flex; align-items:baseline; gap:10px; flex-shrink:0; }
+.cur-stat-num {
+  font-size:clamp(36px,4vw,52px); font-weight:900;
+  letter-spacing:-.03em; line-height:1;
+}
+.cur-stat-lbl { font-size:13px; color:var(--muted); font-weight:500; }
+
+.cur-stat-div { width:1px; align-self:stretch; background:var(--border); flex-shrink:0; }
+
+.cur-insight { display:flex; align-items:flex-start; gap:10px; flex:1; }
+.cur-insight-ico { font-size:20px; flex-shrink:0; margin-top:2px; }
+.cur-insight p { font-size:13.5px; color:var(--muted); line-height:1.65; }
+.cur-insight strong { color:var(--ink); }
+
+/* ═══════════════════════════
    SLIDE 3 — GTM MOTION
 ═══════════════════════════ */
 .gtm-wrap {
