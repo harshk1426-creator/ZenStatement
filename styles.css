@@ -528,13 +528,22 @@ html, body {
 /* ═══════════════════════════
    SLIDE 10 — BEYOND RECON
 ═══════════════════════════ */
-.ladder { display:flex; flex-direction:column; gap:8px; flex:1; }
-.l-arr  { text-align:center; font-size:18px; color:var(--teal); font-weight:700; line-height:1; }
+
+/* Override heading size for this slide so it fits one line */
+#s9 .sec-hd h2 {
+  font-size:clamp(24px,2.8vw,38px);
+  white-space:nowrap;
+}
+#s9 .sec-hd p { font-size:14px; }
+#s9 .slide-inner { gap:10px; }
+
+.ladder { display:flex; flex-direction:column; gap:5px; flex:1; }
+.l-arr  { text-align:center; font-size:15px; color:var(--teal); font-weight:700; line-height:1; padding:1px 0; }
 
 .l-stage {
-  border-radius:18px; padding:20px 26px;
+  border-radius:14px; padding:13px 20px;
   border:1.5px solid rgba(255,255,255,.09);
-  display:flex; flex-direction:column; gap:10px;
+  display:flex; flex-direction:column; gap:7px;
 }
 .ls1 { background:rgba(255,255,255,.04); }
 .ls2 { background:rgba(255,255,255,.07); }
@@ -544,35 +553,35 @@ html, body {
 }
 
 .l-badge {
-  font-size:9.5px; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
-  padding:3px 11px; border-radius:100px; display:inline-block; width:fit-content;
+  font-size:9px; font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  padding:2px 10px; border-radius:100px; display:inline-block; width:fit-content;
 }
 .lb1 { background:rgba(255,255,255,.08); color:rgba(255,255,255,.4); }
 .lb2 { background:rgba(107,99,255,.18); color:#a78bfa; }
 .lb3 { background:rgba(62,207,178,.22); color:var(--teal); }
 
-.l-body { display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center; }
-.l-left h3  { font-size:clamp(15px,1.6vw,19px); font-weight:700; color:var(--white); margin-bottom:8px; }
-.l-left p   { font-size:14px; color:rgba(255,255,255,.55); line-height:1.7; }
-.l-left ul  { padding-left:18px; }
-.l-left li  { font-size:13.5px; color:rgba(255,255,255,.55); line-height:1.85; }
-.l-quote    { font-size:12.5px; color:rgba(255,255,255,.35); font-style:italic; display:block; margin-top:8px; }
+.l-body { display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:center; }
+.l-left h3  { font-size:clamp(13px,1.3vw,16px); font-weight:700; color:var(--white); margin-bottom:5px; }
+.l-left p   { font-size:12.5px; color:rgba(255,255,255,.55); line-height:1.6; }
+.l-left ul  { padding-left:16px; }
+.l-left li  { font-size:12px; color:rgba(255,255,255,.55); line-height:1.75; }
+.l-quote    { font-size:11px; color:rgba(255,255,255,.35); font-style:italic; display:block; margin-top:5px; }
 
-.s2-split { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:8px; }
-.s2-split strong { font-size:14px; color:var(--white); display:block; margin-bottom:4px; }
-.s2-split p      { font-size:13px; color:rgba(255,255,255,.5); }
+.s2-split { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:5px; }
+.s2-split strong { font-size:12.5px; color:var(--white); display:block; margin-bottom:3px; }
+.s2-split p      { font-size:11.5px; color:rgba(255,255,255,.5); line-height:1.5; }
 
-.l-tag { font-size:11px; color:rgba(255,255,255,.35); font-style:italic; margin-top:8px; display:block; }
+.l-tag { font-size:10.5px; color:rgba(255,255,255,.35); font-style:italic; margin-top:5px; display:block; }
 .lt-teal { color:var(--teal); }
 
 .mis-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
 .mis-t {
   background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.1);
-  border-radius:11px; padding:12px 14px;
-  display:flex; flex-direction:column; gap:4px;
+  border-radius:10px; padding:9px 12px;
+  display:flex; flex-direction:column; gap:3px;
 }
-.mis-t span   { font-size:10px; color:rgba(255,255,255,.4); font-weight:500; }
-.mis-t strong { font-size:20px; font-weight:800; color:var(--white); }
+.mis-t span   { font-size:9.5px; color:rgba(255,255,255,.4); font-weight:500; }
+.mis-t strong { font-size:17px; font-weight:800; color:var(--white); }
 .mt-teal  { border-color:rgba(62,207,178,.3); }
 .mt-teal strong { color:var(--teal); }
 .mt-gold strong { color:var(--gold); }
@@ -592,9 +601,9 @@ html, body {
 
 .partner-band {
   background:linear-gradient(90deg,rgba(62,207,178,.15),rgba(62,207,178,.05));
-  border:1.5px solid rgba(62,207,178,.22); border-radius:14px;
-  padding:14px 22px; font-size:13.5px; color:rgba(255,255,255,.55);
-  line-height:1.65; text-align:center; flex-shrink:0;
+  border:1.5px solid rgba(62,207,178,.22); border-radius:12px;
+  padding:10px 20px; font-size:12.5px; color:rgba(255,255,255,.55);
+  line-height:1.6; text-align:center; flex-shrink:0;
 }
 .partner-band strong { color:var(--teal); }
 
