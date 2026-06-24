@@ -1,269 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZenStatement — From 15 to 80 Leads a Month</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>ZenStatement — Strategy Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-  <!-- Side progress dots -->
-  <nav class="progress-nav" id="progressNav" aria-label="Slide navigation"></nav>
-
-  <!-- Slide counter -->
-  <div class="slide-counter" id="slideCounter"><span id="currentNum">1</span> / <span id="totalNum">9</span></div>
-
-  <!-- Keyboard hint -->
-  <div class="kbd-hint" id="kbdHint">↑ ↓ to navigate</div>
+  <nav class="progress-nav" id="progressNav"></nav>
+  <div class="slide-counter"><span id="curSlide">1</span>/<span id="totSlide">10</span></div>
 
   <main class="deck" id="deck">
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 1 — Company Background + Product Suite
-    ═══════════════════════════════════════════════ -->
-    <section class="slide dark-slide" id="s0">
-      <div class="slide-bg-symbols" aria-hidden="true">
-        <span class="bg-sym" style="top:8%;left:6%;font-size:42px">fx</span>
-        <span class="bg-sym" style="top:65%;left:5%;font-size:58px">Σ</span>
-        <span class="bg-sym" style="top:30%;left:18%;font-size:48px">{}</span>
-        <span class="bg-sym" style="top:12%;right:7%;font-size:64px">%</span>
-        <span class="bg-sym" style="top:22%;right:20%;font-size:52px">+</span>
-        <span class="bg-sym" style="top:58%;right:10%;font-size:44px">[ ]</span>
-        <span class="bg-sym" style="top:78%;left:3%;font-size:50px">×</span>
-        <span class="bg-sym" style="top:72%;right:28%;font-size:48px">=</span>
+    <!-- ══════════════════════════════════
+         SLIDE 1 — Cover
+    ══════════════════════════════════ -->
+    <section class="slide cover-slide" id="s0">
+      <div class="cover-glow"></div>
+      <div class="cover-grid" aria-hidden="true"></div>
+      <div class="cover-content">
+        <div class="cover-logo-wrap">
+          <img src="assets/logos/Zenstatement.jpg" alt="ZenStatement" class="cover-logo"/>
+        </div>
+        <h1 class="cover-title">
+          From <span class="teal">15 leads</span> a month<br/>
+          to <span class="teal">80 leads</span> a month<br/>
+          <span class="cover-sub">in the next 3 months</span>
+        </h1>
+        <div class="cover-byline">Created by: <strong>Harsh Khandelwal</strong></div>
       </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SLIDE 2 — Company Background + Product Suite
+    ══════════════════════════════════ -->
+    <section class="slide white-slide" id="s1">
       <div class="slide-inner">
-        <div class="s1-top">
-          <div class="zen-logo-inline">
-            <svg width="36" height="36" viewBox="0 0 48 48" fill="none"><path d="M24 4L44 14V34L24 44L4 34V14L24 4Z" stroke="#3ecfb2" stroke-width="2.5" fill="none"/><path d="M24 14L14 20V28L24 34L34 28V20L24 14Z" fill="#3ecfb2" opacity="0.25"/><path d="M24 20L19 23V27L24 30L29 27V23L24 20Z" fill="#3ecfb2"/></svg>
-            <span>zen statement</span>
-          </div>
-          <div class="deck-eyebrow">Strategy Deck</div>
-          <h1 class="s1-title">From <em class="teal">15 leads</em> a month<br/>to <em class="teal">80 leads</em> a month<br/><span class="s1-sub">in the next 3 months</span></h1>
-          <p class="s1-body">ZenStatement is an AI-powered Finance Operating System built for modern, high-volume businesses. It consolidates fragmented financial data from payment gateways, banks, marketplaces, and ERPs into a single intelligent hub — automating reconciliation, cash flow visibility, payouts, and collections.</p>
-          <div class="logo-strip-label">Trusted by</div>
-          <div class="logo-strip">
-            <div class="logo-pill"><img src="assets/logos/agilias.png" alt="Agilias" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><span class="logo-fallback">Agilias (Lotto)</span></div>
-            <div class="logo-pill"><img src="assets/logos/legend-of-toys.png" alt="Legend of Toys" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><span class="logo-fallback">Legend of Toys</span></div>
-            <div class="logo-pill"><img src="assets/logos/house-of-mensa.png" alt="House of Mensa" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><span class="logo-fallback">House of Mensa</span></div>
-            <div class="logo-pill"><img src="assets/logos/lokal.png" alt="Lokal" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><span class="logo-fallback">Lokal</span></div>
-            <div class="logo-pill"><img src="assets/logos/bear-house.png" alt="The Bear House" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><span class="logo-fallback">The Bear House</span></div>
+        <div class="s2-top">
+          <div class="tag teal-tag">Company Overview</div>
+          <h2>ZenStatement — <span class="teal">AI-Powered Finance OS</span></h2>
+          <p class="body-text">ZenStatement is an AI-powered Finance Operating System built for modern, high-volume businesses. It consolidates fragmented financial data from payment gateways, banks, marketplaces, and ERPs into a single intelligent hub — automating reconciliation, cash flow visibility, payouts, and collections.</p>
+          <div class="trusted-row">
+            <span class="trusted-label">Trusted by</span>
+            <div class="logo-strip">
+              <div class="logo-pill"><img src="assets/logos/Agilitas.jpg" alt="Agilitas"/></div>
+              <div class="logo-pill text-logo">Legend of Toys</div>
+              <div class="logo-pill"><img src="assets/logos/House%20of%20Mesa%20Brands.jpg" alt="House of Mensa Brands"/></div>
+              <div class="logo-pill"><img src="assets/logos/Lokal.jpg" alt="Lokal"/></div>
+              <div class="logo-pill"><img src="assets/logos/The%20Bear%20House%20Logo.png" alt="The Bear House"/></div>
+            </div>
           </div>
         </div>
-        <div class="s1-bottom">
-          <div class="product-card">
-            <div class="pc-icon">💸</div>
+        <div class="divider-line"></div>
+        <div class="s2-bottom">
+          <div class="prod-card">
+            <div class="prod-icon">💸</div>
             <h3>Payout Management</h3>
             <p>Automate reconciliation and ensure every payout is accurate and on time</p>
           </div>
-          <div class="product-card">
-            <div class="pc-icon">📥</div>
+          <div class="prod-card">
+            <div class="prod-icon">📥</div>
             <h3>Collection Management</h3>
             <p>Accelerate cash flow with AI-driven collections across all revenue channels</p>
           </div>
-          <div class="product-card">
-            <div class="pc-icon">📊</div>
+          <div class="prod-card">
+            <div class="prod-icon">📊</div>
             <h3>Cash Flow Management</h3>
             <p>Consolidate fragmented revenue data into a single source of truth with predictive insights</p>
           </div>
-          <div class="product-card accent-card">
-            <div class="pc-icon">🤖</div>
+          <div class="prod-card accent-prod">
+            <div class="prod-icon">🤖</div>
             <h3>Creo AI Agent</h3>
-            <p>Finance-native AI platform — from raw spreadsheets to reconciled reports with full audit trails</p>
+            <p>Finance-native AI — from raw spreadsheets to reconciled reports with full audit trails</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 2 — GTM Motion before Partnerships
-    ═══════════════════════════════════════════════ -->
-    <section class="slide light-slide" id="s1">
+    <!-- ══════════════════════════════════
+         SLIDE 3 — GTM Motion Before Partnerships
+    ══════════════════════════════════ -->
+    <section class="slide white-slide" id="s2">
       <div class="slide-inner">
-        <div class="slide-header">
-          <div class="slide-tag">GTM Strategy</div>
-          <h2>The GTM Motion <em class="teal">Before Partnerships</em></h2>
-        </div>
-        <div class="two-col-layout">
-          <!-- LHS Inbound -->
+        <div class="tag teal-tag">GTM Strategy</div>
+        <h2>The GTM Motion <span class="teal">Before Partnerships</span></h2>
+        <div class="gtm-cols">
+          <!-- Inbound -->
           <div class="gtm-col">
-            <div class="col-heading inbound-heading">
-              <span class="col-badge inbound-badge">Inbound Motion</span>
-            </div>
-            <div class="gtm-item">
-              <div class="gtm-num">01</div>
-              <div>
-                <h4>Offline Community — "The CFO Ledger"</h4>
-                <p>Industry-specific offline events. <em>"Are marketplaces charging you the right commissions?"</em> (E-Commerce/D2C) · Similar events for F&amp;B, Retail, Hospitality ICPs</p>
-              </div>
-            </div>
-            <div class="gtm-item">
-              <div class="gtm-num">02</div>
-              <div>
-                <h4>Online Community Activation</h4>
-                <p>Same event formats taken online, co-hosted with finance leaders from target industries</p>
-              </div>
-            </div>
-            <div class="gtm-item">
-              <div class="gtm-num">03</div>
-              <div>
-                <h4>LinkedIn Case Studies &amp; Blogs</h4>
-                <p>Anonymised client stories showing how ZenStatement helped specific business profiles save margins</p>
-              </div>
-            </div>
-            <div class="gtm-item">
-              <div class="gtm-num">04</div>
-              <div>
-                <h4>CFO Partnerships for Organic Advocacy</h4>
-                <p>Partner with CFOs of leading players to post about protecting and saving margins</p>
-              </div>
-            </div>
-            <div class="gtm-item">
-              <div class="gtm-num">05</div>
-              <div>
-                <h4>Podcast Appearances</h4>
-                <div class="podcast-grid">
-                  <span>The Neon Show</span><span>Prime Venture Partners</span>
-                  <span>SeedToScale — Accel</span><span>Indian Business Podcast</span>
-                  <span>The Indian D2C Playbook</span><span>The Company We Keep</span>
+            <div class="col-badge inbound-badge">Inbound Motion</div>
+            <div class="gtm-list">
+              <div class="gtm-row"><span class="gn">01</span><div><strong>Offline Community — "The CFO Ledger"</strong><p>Industry events: <em>"Are marketplaces charging you the right commissions?"</em> (E-Commerce/D2C) · F&amp;B · Retail · Hospitality</p></div></div>
+              <div class="gtm-row"><span class="gn">02</span><div><strong>Online Community Activation</strong><p>Same formats online, co-hosted with finance leaders from target industries</p></div></div>
+              <div class="gtm-row"><span class="gn">03</span><div><strong>LinkedIn Case Studies &amp; Blogs</strong><p>Anonymised client stories showing how ZenStatement helped save margins</p></div></div>
+              <div class="gtm-row"><span class="gn">04</span><div><strong>CFO Partnerships for Organic Advocacy</strong><p>CFOs of leading players post about protecting and saving margins with ZenStatement</p></div></div>
+              <div class="gtm-row"><span class="gn">05</span><div><strong>Podcast Appearances</strong>
+                <div class="podcast-chips">
+                  <span>The Neon Show</span><span>Prime Venture Partners</span><span>SeedToScale — Accel</span>
+                  <span>Indian Business Podcast</span><span>The Indian D2C Playbook</span><span>The Company We Keep</span>
                   <span>Forbes India — Startup Fridays</span><span>EY India — Finance Transformation</span>
                 </div>
-              </div>
+              </div></div>
             </div>
           </div>
-
-          <!-- Divider -->
-          <div class="col-divider"></div>
-
-          <!-- RHS Outbound -->
+          <div class="col-sep"></div>
+          <!-- Outbound -->
           <div class="gtm-col">
-            <div class="col-heading outbound-heading">
-              <span class="col-badge outbound-badge">Outbound Motion</span>
-            </div>
-            <h4 class="outreach-heading">ICP Outreach Process</h4>
-            <div class="outreach-flow">
-              <div class="outreach-step">
-                <div class="outreach-logo-box">
-                  <img src="assets/logos/linkedin.png" alt="LinkedIn" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
-                  <span class="tool-fallback" style="display:none">in</span>
+            <div class="col-badge outbound-badge">Outbound Motion</div>
+            <p class="outbound-title">ICP Outreach Process</p>
+            <div class="tool-flow">
+              <div class="tool-step">
+                <div class="tool-icon-box li-box">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="#0077b5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                 </div>
-                <div class="outreach-step-label">LinkedIn Sales Navigator</div>
-                <p>Research and identify target ICPs across F&amp;B, Hospitality, E-Commerce, and Retail</p>
+                <strong>LinkedIn Sales Navigator</strong>
+                <p>Research &amp; identify target ICPs across F&amp;B, Hospitality, E-Commerce, Retail</p>
               </div>
-              <div class="outreach-arrow">→</div>
-              <div class="outreach-step">
-                <div class="outreach-logo-box apollo-box">
-                  <img src="assets/logos/apollo.png" alt="Apollo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
-                  <span class="tool-fallback" style="display:none">🚀</span>
+              <div class="tool-arrow">→</div>
+              <div class="tool-step">
+                <div class="tool-icon-box apollo-box">
+                  <svg viewBox="0 0 40 40" width="28" height="28"><circle cx="20" cy="20" r="20" fill="#1a1a2e"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#7c75ff" font-size="14" font-weight="800" font-family="Inter,sans-serif">A</text></svg>
                 </div>
-                <div class="outreach-step-label">Apollo.io</div>
-                <p>Find verified contact details for decision-makers (CFOs, Founders, Finance Heads)</p>
+                <strong>Apollo.io</strong>
+                <p>Find verified contact details for CFOs, Founders &amp; Finance Heads</p>
               </div>
-              <div class="outreach-arrow">→</div>
-              <div class="outreach-step">
-                <div class="outreach-logo-box mailchimp-box">
-                  <img src="assets/logos/mailchimp.png" alt="Mailchimp" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
-                  <span class="tool-fallback" style="display:none">✉️</span>
+              <div class="tool-arrow">→</div>
+              <div class="tool-step">
+                <div class="tool-icon-box mc-box">
+                  <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#FFE01B" d="M0 0h24v24H0z"/><path fill="#241C15" d="M20.6 10.2c-.1-.4-.5-.7-.9-.7h-1.1c-.1-.5-.4-.9-.9-1.1.1-.2.1-.4.1-.6 0-1.1-.9-2-2-2s-2 .9-2 2c0 .2 0 .4.1.6-.5.2-.8.6-.9 1.1H11.8c-.4 0-.8.3-.9.7L10 14h10l-.9-3.8zM16 7.8c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z"/></svg>
                 </div>
-                <div class="outreach-step-label">Mailchimp</div>
+                <strong>Mailchimp</strong>
                 <p>Execute personalised outreach sequences at scale</p>
               </div>
             </div>
+            <div class="outbound-note">Left-to-right outreach flow — identify → verify → engage</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 3 — Partnerships GTM Motion
-    ═══════════════════════════════════════════════ -->
-    <section class="slide dark-slide" id="s2">
+    <!-- ══════════════════════════════════
+         SLIDE 4 — Partnerships GTM Motion
+    ══════════════════════════════════ -->
+    <section class="slide teal-light-slide" id="s3">
       <div class="slide-inner">
-        <div class="slide-header light">
-          <div class="slide-tag teal-tag">Partnerships</div>
-          <h2>Partnerships <em class="teal">GTM Motion</em></h2>
-        </div>
-        <div class="partner-cards">
-          <div class="partner-card">
-            <div class="partner-icon">🤝</div>
-            <div class="partner-type-badge">Boutique Advisory</div>
+        <div class="tag dark-tag">Partnerships</div>
+        <h2>Partnerships <span class="teal">GTM Motion</span></h2>
+        <div class="partner-grid">
+          <div class="p-card">
+            <div class="p-card-top">
+              <span class="p-icon">🤝</span>
+              <span class="p-type">Boutique Advisory</span>
+            </div>
             <h3>Boutique Advisory Firms</h3>
-            <div class="partner-icp">ICP: &lt;50 employees · D2C, Retail, Hospitality, F&amp;B · <em>e.g. Redefin Capital</em></div>
-            <div class="partner-msg">"Partner with us to help your clients identify revenue leakage"</div>
+            <div class="p-icp">ICP: &lt;50 employees · D2C, Retail, Hospitality, F&amp;B<br/><em>e.g. Redefin Capital</em></div>
+            <div class="p-msg">"Partner with us to help your clients identify revenue leakage"</div>
           </div>
-          <div class="partner-card featured-partner">
-            <div class="partner-icon">🏢</div>
-            <div class="partner-type-badge featured-badge">Big Advisory</div>
+          <div class="p-card p-card-featured">
+            <div class="p-card-top">
+              <span class="p-icon">🏢</span>
+              <span class="p-type featured-type">Big Advisory</span>
+            </div>
             <h3>Big Consulting / Advisory</h3>
-            <div class="partner-icp">ICP: EY / Deloitte-style firms · Target department-level partners</div>
-            <div class="partner-msg">"Co-sell with us to bring AI-powered finance ops to your enterprise clients"</div>
-            <div class="partner-note">Approach department-level partners directly for co-sell agreements</div>
+            <div class="p-icp">ICP: EY / Deloitte-style firms · Department-level partners</div>
+            <div class="p-msg">"Co-sell with us to bring AI-powered finance ops to your enterprise clients"</div>
+            <div class="p-note">Approach department-level partners directly for co-sell agreements</div>
           </div>
-          <div class="partner-card">
-            <div class="partner-icon">⚡</div>
-            <div class="partner-type-badge">Specialized</div>
+          <div class="p-card">
+            <div class="p-card-top">
+              <span class="p-icon">⚡</span>
+              <span class="p-type">Specialized</span>
+            </div>
             <h3>Specialized Advisory Firms</h3>
-            <div class="partner-icp">ICP: Niche advisors by vertical · <em>e.g. Your Growth Labs (Quick Commerce)</em></div>
-            <div class="partner-msg">"Help your clients scale smarter with real-time financial intelligence"</div>
+            <div class="p-icp">ICP: Niche advisors by vertical<br/><em>e.g. Your Growth Labs (Quick Commerce)</em></div>
+            <div class="p-msg">"Help your clients scale smarter with real-time financial intelligence"</div>
           </div>
         </div>
-        <!-- GTM Outreach strip -->
         <div class="outreach-strip">
-          <div class="outreach-strip-label">Outreach Motion</div>
-          <div class="outreach-strip-flow">
+          <span class="os-label">Outreach Motion</span>
+          <div class="os-flow">
             <div class="os-step">
-              <div class="os-logo">
-                <img src="assets/logos/linkedin.png" alt="LinkedIn" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"/><span style="display:none">LinkedIn</span>
-              </div>
-              <span>LinkedIn Sales Navigator</span>
-              <small>Identify &amp; shortlist partner firms</small>
+              <div class="os-icon li-os"><svg viewBox="0 0 24 24" width="20" height="20" fill="#0077b5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+              <span>LinkedIn Sales Navigator</span><small>Identify partner firms</small>
             </div>
-            <div class="os-arrow">→</div>
+            <span class="os-arr">→</span>
             <div class="os-step">
-              <div class="os-logo">
-                <img src="assets/logos/apollo.png" alt="Apollo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"/><span style="display:none">Apollo</span>
-              </div>
-              <span>Apollo.io</span>
-              <small>Pull verified decision-maker contacts</small>
+              <div class="os-icon ap-os"><svg viewBox="0 0 20 20" width="20" height="20"><circle cx="10" cy="10" r="10" fill="#1a1a2e"/><text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#7c75ff" font-size="11" font-weight="800" font-family="Inter,sans-serif">A</text></svg></div>
+              <span>Apollo.io</span><small>Pull verified contacts</small>
             </div>
-            <div class="os-arrow">→</div>
+            <span class="os-arr">→</span>
             <div class="os-step">
-              <div class="os-logo">
-                <img src="assets/logos/mailchimp.png" alt="Mailchimp" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"/><span style="display:none">Mailchimp</span>
-              </div>
-              <span>Mailchimp</span>
-              <small>Run personalised email sequences by partner type</small>
+              <div class="os-icon mc-os">✉️</div>
+              <span>Mailchimp</span><small>Run email sequences</small>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 4 — F&B Industry
-    ═══════════════════════════════════════════════ -->
-    <section class="slide industry-slide" id="s3">
-      <div class="industry-accent-bar fnb-bar"></div>
+    <!-- ══════════════════════════════════
+         SLIDE 5 — F&B Industry
+    ══════════════════════════════════ -->
+    <section class="slide white-slide" id="s4">
+      <div class="industry-bar fnb-bar"></div>
       <div class="slide-inner">
-        <div class="industry-header">
-          <div class="industry-icon">🍽️</div>
+        <div class="ind-header">
+          <span class="ind-emoji">🍽️</span>
           <div>
-            <div class="slide-tag">Industry Focus</div>
-            <h2>F&amp;B <em class="teal">Industry</em></h2>
-            <p class="industry-descriptor">Restaurants · Cloud Kitchens · QSR Chains · FMCG Brands</p>
+            <div class="tag" style="background:#fff3ee;color:#e8753a">Industry Focus</div>
+            <h2>F&amp;B <span class="teal">Industry</span></h2>
+            <p class="ind-desc">Restaurants · Cloud Kitchens · QSR Chains · FMCG Brands</p>
           </div>
         </div>
-        <div class="icp-problems-row">
+        <div class="icp-row">
           <div class="icp-box">
-            <div class="icp-label">ICP</div>
-            <p>Multi-outlet F&amp;B operators, 10–200 employees, managing multiple revenue streams across dine-in, delivery, and retail</p>
+            <div class="box-label">ICP</div>
+            <p>Multi-outlet F&amp;B operators, 10–200 employees, managing revenue streams across dine-in, delivery, and retail</p>
           </div>
-          <div class="problems-box">
-            <div class="problems-label">Key Pain Points</div>
+          <div class="pain-box">
+            <div class="box-label" style="color:#e8753a">Key Pain Points</div>
             <ul>
               <li>Revenue leakage across delivery platforms (Zomato, Swiggy)</li>
               <li>No unified P&amp;L view across outlets</li>
@@ -272,44 +230,55 @@
             </ul>
           </div>
         </div>
-        <div class="client-cards">
-          <div class="client-card">
-            <div class="client-name">Rebel Foods</div>
+        <div class="client-grid cols3">
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/Rebel%20Foods%20Logo.jpg" alt="Rebel Foods"/></div>
+            <div class="c-name">Rebel Foods</div>
             <p>No unified P&amp;L across 10+ cloud kitchen brands operating on the same platform</p>
           </div>
-          <div class="client-card">
-            <div class="client-name">EatSure</div>
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/Eat%20Sure.jpg" alt="EatSure"/></div>
+            <div class="c-name">EatSure</div>
             <p>Delivery commission leakage from Zomato and Swiggy not reconciled against actual order revenue</p>
           </div>
-          <div class="client-card">
-            <div class="client-name">Biryani by Kilo</div>
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/Biryani%20by%20Kilo.jpg" alt="Biryani by Kilo"/></div>
+            <div class="c-name">Biryani by Kilo</div>
             <p>Manual daily sales reconciliation across city-level outlets with no real-time cost visibility</p>
           </div>
+        </div>
+        <div class="platform-row-label">Platforms ZenStatement reconciles for F&amp;B</div>
+        <div class="platform-strip">
+          <div class="plt-chip"><img src="assets/logos/Zomato.jpg" alt="Zomato"/>Zomato</div>
+          <div class="plt-chip"><img src="assets/logos/Swiggy.jpg" alt="Swiggy"/>Swiggy</div>
+          <div class="plt-chip"><img src="assets/logos/blinkit.jpg" alt="Blinkit"/>Blinkit</div>
+          <div class="plt-chip"><img src="assets/logos/Zepto.jpg" alt="Zepto"/>Zepto</div>
+          <div class="plt-chip">🏪 Direct POS</div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 5 — Retail Chains
-    ═══════════════════════════════════════════════ -->
-    <section class="slide industry-slide" id="s4">
-      <div class="industry-accent-bar retail-bar"></div>
+    <!-- ══════════════════════════════════
+         SLIDE 6 — Retail Chains
+    ══════════════════════════════════ -->
+    <section class="slide white-slide" id="s5">
+      <div class="industry-bar retail-bar"></div>
       <div class="slide-inner">
-        <div class="industry-header">
-          <div class="industry-icon">🛍️</div>
+        <div class="ind-header">
+          <span class="ind-emoji">🛍️</span>
           <div>
-            <div class="slide-tag">Industry Focus</div>
-            <h2>Retail <em class="teal">Chains</em></h2>
-            <p class="industry-descriptor">Mono-brand &amp; Multi-brand Retail · D2C Brands with Offline Presence</p>
+            <div class="tag" style="background:#f0eeff;color:#6c63ff">Industry Focus</div>
+            <h2>Retail <span class="teal">Chains</span></h2>
+            <p class="ind-desc">Mono-brand &amp; Multi-brand Retail · D2C Brands with Offline Presence</p>
           </div>
         </div>
-        <div class="icp-problems-row">
+        <div class="icp-row">
           <div class="icp-box">
-            <div class="icp-label">ICP</div>
+            <div class="box-label">ICP</div>
             <p>Retail chains with 5–100 stores, managing inventory, returns, and multi-channel sales across online and offline</p>
           </div>
-          <div class="problems-box">
-            <div class="problems-label">Key Pain Points</div>
+          <div class="pain-box" style="background:#f0eeff;border-color:rgba(108,99,255,0.15)">
+            <div class="box-label" style="color:#6c63ff">Key Pain Points</div>
             <ul>
               <li>Inventory write-offs not reflected in P&amp;L</li>
               <li>Revenue leakage from returns and discounts</li>
@@ -318,44 +287,58 @@
             </ul>
           </div>
         </div>
-        <div class="client-cards">
-          <div class="client-card">
-            <div class="client-name">Lifestyle</div>
-            <p>No single margin view across 75+ stores, with returns and discount leakage untracked at the store level</p>
+        <div class="client-grid cols3">
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/LifeStyle.jpg" alt="Lifestyle"/></div>
+            <div class="c-name">Lifestyle</div>
+            <p>No single margin view across 75+ stores, with returns and discount leakage untracked at store level</p>
           </div>
-          <div class="client-card">
-            <div class="client-name">Westside / Zudio (Tata)</div>
+          <div class="c-card">
+            <div class="c-logo-row two-logos">
+              <img src="assets/logos/Westside.jpg" alt="Westside"/>
+              <img src="assets/logos/Zudio.jpg" alt="Zudio"/>
+            </div>
+            <div class="c-name">Westside / Zudio (Tata)</div>
             <p>Multi-brand P&amp;L consolidation across two retail formats with no unified finance OS</p>
           </div>
-          <div class="client-card">
-            <div class="client-name">Ownit! (Aditya Birla)</div>
+          <div class="c-card">
+            <div class="c-logo-row"><span class="brand-sym">AB</span></div>
+            <div class="c-name">Ownit! (Aditya Birla)</div>
             <p>Marketplace fee deductions and return reconciliation done manually across all selling channels</p>
           </div>
+        </div>
+        <div class="platform-row-label">Marketplaces reconciled</div>
+        <div class="platform-strip">
+          <div class="plt-chip"><img src="assets/logos/Amazon.jpg" alt="Amazon"/>Amazon</div>
+          <div class="plt-chip"><img src="assets/logos/Flipkart.jpg" alt="Flipkart"/>Flipkart</div>
+          <div class="plt-chip"><img src="assets/logos/Myntra.jpg" alt="Myntra"/>Myntra</div>
+          <div class="plt-chip"><img src="assets/logos/Meesho.jpg" alt="Meesho"/>Meesho</div>
+          <div class="plt-chip"><img src="assets/logos/Nykaa.jpg" alt="Nykaa"/>Nykaa</div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 6 — Hospitality
-    ═══════════════════════════════════════════════ -->
-    <section class="slide industry-slide" id="s5">
-      <div class="industry-accent-bar hosp-bar"></div>
+    <!-- ══════════════════════════════════
+         SLIDE 7 — Hospitality
+    ══════════════════════════════════ -->
+    <section class="slide white-slide" id="s6">
+      <div class="industry-bar hosp-bar"></div>
       <div class="slide-inner">
-        <div class="industry-header">
-          <div class="industry-icon">🏨</div>
+        <div class="ind-header">
+          <span class="ind-emoji">🏨</span>
           <div>
-            <div class="slide-tag">Industry Focus</div>
-            <h2>Hospitality <em class="teal">Sector</em></h2>
-            <p class="industry-descriptor">Hotels · Resorts · Serviced Apartments · Experience Operators</p>
+            <div class="tag" style="background:#e8f8f5;color:#2aaa92">Industry Focus</div>
+            <h2>Hospitality <span class="teal">Sector</span></h2>
+            <p class="ind-desc">Hotels · Resorts · Serviced Apartments · Experience Operators</p>
           </div>
         </div>
-        <div class="icp-problems-row">
+        <div class="icp-row">
           <div class="icp-box">
-            <div class="icp-label">ICP</div>
+            <div class="box-label">ICP</div>
             <p>Independent hotels and boutique chains, 20–500 rooms, managing bookings across OTAs and direct channels</p>
           </div>
-          <div class="problems-box">
-            <div class="problems-label">Key Pain Points</div>
+          <div class="pain-box" style="background:#e8f8f5;border-color:rgba(62,207,178,0.2)">
+            <div class="box-label" style="color:#2aaa92">Key Pain Points</div>
             <ul>
               <li>OTA commission leakage not tracked against actual yield</li>
               <li>No unified revenue view across room, F&amp;B, and ancillary</li>
@@ -364,246 +347,247 @@
             </ul>
           </div>
         </div>
-        <div class="client-cards four-cards">
-          <div class="client-card">
-            <div class="client-name">GoStops</div>
+        <div class="client-grid cols4">
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/goStops" alt="GoStops"/></div>
+            <div class="c-name">GoStops</div>
             <p>OTA commissions eating into hostel margins with no real-time net yield visibility</p>
           </div>
-          <div class="client-card">
-            <div class="client-name">Treebo Hotels</div>
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/Treebo.jpg" alt="Treebo"/></div>
+            <div class="c-name">Treebo Hotels</div>
             <p>No consolidated P&amp;L across franchise and managed properties on a single dashboard</p>
           </div>
-          <div class="client-card">
-            <div class="client-name">Hosteller</div>
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/The%20Hosteller.jpg" alt="Hosteller"/></div>
+            <div class="c-name">Hosteller</div>
             <p>Manual reconciliation of direct bookings vs. OTA bookings across 30+ properties</p>
           </div>
-          <div class="client-card">
-            <div class="client-name">Zostel</div>
+          <div class="c-card">
+            <div class="c-logo-row"><img src="assets/logos/Zostel.jpg" alt="Zostel"/></div>
+            <div class="c-name">Zostel</div>
             <p>No departmental revenue split between dormitory, private rooms, F&amp;B, and experiences</p>
           </div>
+        </div>
+        <div class="platform-row-label">OTA channels reconciled</div>
+        <div class="platform-strip">
+          <div class="plt-chip">🌐 MakeMyTrip</div>
+          <div class="plt-chip">🌐 Booking.com</div>
+          <div class="plt-chip">🌐 Airbnb</div>
+          <div class="plt-chip">🌐 OYO</div>
+          <div class="plt-chip">🔗 Direct Bookings</div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 7 — ECommerce Players
-    ═══════════════════════════════════════════════ -->
-    <section class="slide industry-slide" id="s6">
-      <div class="industry-accent-bar ecom-bar"></div>
+    <!-- ══════════════════════════════════
+         SLIDE 8 — ECommerce Players
+    ══════════════════════════════════ -->
+    <section class="slide white-slide" id="s7">
+      <div class="industry-bar ecom-bar"></div>
       <div class="slide-inner">
-        <div class="industry-header">
-          <div class="industry-icon">🛒</div>
+        <div class="ind-header">
+          <span class="ind-emoji">🛒</span>
           <div>
-            <div class="slide-tag">Industry Focus</div>
-            <h2>ECommerce <em class="teal">Players</em></h2>
-            <p class="industry-descriptor">D2C Brands · Marketplace Sellers · Quick Commerce Players</p>
+            <div class="tag" style="background:#fff8e6;color:#b8860b">Industry Focus</div>
+            <h2>ECommerce <span class="teal">Players</span></h2>
+            <p class="ind-desc">D2C Brands · Marketplace Sellers · Quick Commerce Players</p>
           </div>
         </div>
-        <div class="icp-problems-row">
+        <div class="icp-row">
           <div class="icp-box">
-            <div class="icp-label">ICP</div>
+            <div class="box-label">ICP</div>
             <p>E-commerce brands doing ₹5Cr–₹200Cr GMV, selling across 3+ platforms, with a lean finance team</p>
           </div>
-          <div class="problems-box">
-            <div class="problems-label">Key Pain Points</div>
+          <div class="pain-box" style="background:#fff8e6;border-color:rgba(230,184,74,0.2)">
+            <div class="box-label" style="color:#b8860b">Key Pain Points</div>
             <ul>
-              <li>Marketplace fee and return deductions not reconciled</li>
+              <li>Marketplace fee &amp; return deductions not reconciled</li>
               <li>Contribution margin per channel unknown</li>
               <li>Ad spend vs. revenue correlation not visible</li>
               <li>Finance team operating entirely on Excel</li>
             </ul>
           </div>
         </div>
-        <div class="client-cards two-cards">
-          <div class="client-card large-client-card">
-            <div class="client-name">Snackible</div>
+        <div class="client-grid cols2 ecom-clients">
+          <div class="c-card c-card-lg">
+            <div class="c-logo-row"><img src="assets/logos/Snackible.jpg" alt="Snackible"/></div>
+            <div class="c-name">Snackible</div>
             <p>Marketplace fee deductions across Amazon and Flipkart not matched against actual payout settlements</p>
           </div>
-          <div class="client-card large-client-card">
-            <div class="client-name">DaMENSCH</div>
+          <div class="c-card c-card-lg">
+            <div class="c-logo-row"><img src="assets/logos/DaMENSCH.jpg" alt="DaMENSCH"/></div>
+            <div class="c-name">DaMENSCH</div>
             <p>No real-time contribution margin view by channel (D2C website vs. marketplaces vs. quick commerce)</p>
           </div>
         </div>
+        <div class="platform-row-label">Marketplaces reconciled</div>
+        <div class="platform-strip">
+          <div class="plt-chip"><img src="assets/logos/Amazon.jpg" alt="Amazon"/>Amazon</div>
+          <div class="plt-chip"><img src="assets/logos/Flipkart.jpg" alt="Flipkart"/>Flipkart</div>
+          <div class="plt-chip"><img src="assets/logos/blinkit.jpg" alt="Blinkit"/>Blinkit</div>
+          <div class="plt-chip"><img src="assets/logos/Zepto.jpg" alt="Zepto"/>Zepto</div>
+          <div class="plt-chip"><img src="assets/logos/Meesho.jpg" alt="Meesho"/>Meesho</div>
+          <div class="plt-chip">🌐 D2C Website</div>
+        </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 8 — Implementation Journey
-    ═══════════════════════════════════════════════ -->
-    <section class="slide light-slide" id="s7">
+    <!-- ══════════════════════════════════
+         SLIDE 9 — Implementation Journey
+    ══════════════════════════════════ -->
+    <section class="slide teal-light-slide" id="s8">
       <div class="slide-inner">
-        <div class="slide-header">
-          <div class="slide-tag">Onboarding</div>
-          <h2>Implementation <em class="teal">Journey</em></h2>
-          <p class="slide-subtitle">From Onboarding to Live Reconciliation in 3 Months</p>
-        </div>
+        <div class="tag teal-tag">Onboarding</div>
+        <h2>Implementation <span class="teal">Journey</span></h2>
+        <p class="slide-sub">From Onboarding to Live Reconciliation in 3 Months</p>
+
         <div class="timeline-wrap">
-          <!-- Cards above -->
-          <div class="timeline-cards-top">
-            <div class="tl-card tl-card-top" style="grid-column:1">
-              <div class="tl-card-header">
-                <span class="tl-milestone">M0</span>
-                <h4>Onboarding</h4>
-              </div>
+          <!-- Top cards: M0, M2 -->
+          <div class="tl-top-row">
+            <div class="tl-card tl-card-sm">
+              <div class="tl-ch"><span class="tl-m">M0</span><strong>Onboarding</strong></div>
               <p>Account setup, data access permissions, platform credentials collected, kickoff with finance team</p>
             </div>
             <div class="tl-spacer"></div>
-            <div class="tl-card tl-card-top" style="grid-column:3">
-              <div class="tl-card-header">
-                <span class="tl-milestone">M2</span>
-                <h4>Platform Expansion</h4>
+            <div class="tl-card tl-card-sm">
+              <div class="tl-ch"><span class="tl-m">M2</span><strong>Platform Expansion</strong></div>
+              <p>Onboarding extended to all remaining platforms. Full historical data across entire stack.</p>
+              <div class="plt-mini-row">
+                <img src="assets/logos/blinkit.jpg" alt="Blinkit" title="Blinkit"/>
+                <img src="assets/logos/Zepto.jpg" alt="Zepto" title="Zepto"/>
+                <img src="assets/logos/Nykaa.jpg" alt="Nykaa" title="Nykaa"/>
+                <img src="assets/logos/Meesho.jpg" alt="Meesho" title="Meesho"/>
+                <span class="plt-mini-text">+ Direct Website</span>
               </div>
-              <p>Onboarding extended to all remaining platforms. Full historical data now available across the entire stack.</p>
-              <div class="platform-cluster">
-                <span class="platform-chip"><img src="assets/logos/blinkit.png" alt="" onerror="this.style.display='none'"/> Blinkit</span>
-                <span class="platform-chip"><img src="assets/logos/zepto.png" alt="" onerror="this.style.display='none'"/> Zepto</span>
-                <span class="platform-chip"><img src="assets/logos/nykaa.png" alt="" onerror="this.style.display='none'"/> Nykaa</span>
-                <span class="platform-chip"><img src="assets/logos/meesho.png" alt="" onerror="this.style.display='none'"/> Meesho</span>
-                <span class="platform-chip">🌐 Direct Website</span>
-              </div>
-              <div class="cluster-note">Full platform coverage achieved</div>
+              <div class="tl-note">Full platform coverage achieved ✓</div>
             </div>
           </div>
 
-          <!-- Timeline track -->
-          <div class="timeline-track">
-            <div class="tl-node active-node"><span>M0</span></div>
+          <!-- Track -->
+          <div class="tl-track">
+            <div class="tl-node tl-n0"><span>M0</span></div>
             <div class="tl-line"></div>
-            <div class="tl-node"><span>M1</span></div>
+            <div class="tl-node tl-n1"><span>M1</span></div>
             <div class="tl-line"></div>
-            <div class="tl-node"><span>M2</span></div>
+            <div class="tl-node tl-n2"><span>M2</span></div>
             <div class="tl-line"></div>
-            <div class="tl-node live-node"><span>M3</span></div>
+            <div class="tl-node tl-n3"><span>M3</span></div>
           </div>
 
-          <!-- Cards below -->
-          <div class="timeline-cards-bottom">
+          <!-- Bottom cards: M1, M3 -->
+          <div class="tl-bottom-row">
             <div class="tl-spacer"></div>
-            <div class="tl-card tl-card-bottom" style="grid-column:2">
-              <div class="tl-card-header">
-                <span class="tl-milestone">M1</span>
-                <h4>Historical Data Extraction</h4>
+            <div class="tl-card tl-card-sm">
+              <div class="tl-ch"><span class="tl-m">M1</span><strong>Historical Data Extraction</strong></div>
+              <p>Platform-by-platform onboarding begins. Historical records pulled sequentially.</p>
+              <div class="goal-box">🎯 Identify historical revenue leakage &amp; backtest on previous months' data</div>
+              <div class="plt-mini-row">
+                <img src="assets/logos/Zomato.jpg" alt="Zomato" title="Zomato"/>
+                <img src="assets/logos/Swiggy.jpg" alt="Swiggy" title="Swiggy"/>
+                <img src="assets/logos/Amazon.jpg" alt="Amazon" title="Amazon"/>
+                <img src="assets/logos/Flipkart.jpg" alt="Flipkart" title="Flipkart"/>
+                <img src="assets/logos/Myntra.jpg" alt="Myntra" title="Myntra"/>
               </div>
-              <p>Platform-by-platform onboarding begins. Historical data records pulled from each platform sequentially.</p>
-              <div class="goal-callout">🎯 Identify historical revenue leakage and backtest on previous months' data</div>
-              <div class="platform-cluster">
-                <span class="platform-chip"><img src="assets/logos/zomato.png" alt="" onerror="this.style.display='none'"/> Zomato</span>
-                <span class="platform-chip"><img src="assets/logos/swiggy.png" alt="" onerror="this.style.display='none'"/> Swiggy</span>
-                <span class="platform-chip"><img src="assets/logos/amazon.png" alt="" onerror="this.style.display='none'"/> Amazon</span>
-                <span class="platform-chip"><img src="assets/logos/flipkart.png" alt="" onerror="this.style.display='none'"/> Flipkart</span>
-                <span class="platform-chip"><img src="assets/logos/myntra.png" alt="" onerror="this.style.display='none'"/> Myntra</span>
-              </div>
-              <div class="cluster-note">Platforms onboarded one by one</div>
+              <div class="tl-note">Platforms onboarded one by one</div>
             </div>
             <div class="tl-spacer"></div>
-            <div class="tl-card tl-card-bottom live-card" style="grid-column:4">
-              <div class="tl-card-header">
-                <span class="tl-milestone live-milestone">M3</span>
-                <h4>Live Data &amp; Real-Time Reconciliation</h4>
-              </div>
-              <p>Tool switched to live data ingestion. Present month reconciliations generated automatically. Finance team receives real-time P&amp;L and leakage alerts.</p>
-              <div class="outcome-callout">✅ Client sees live reconciliation from Day 1 of M3</div>
+            <div class="tl-card tl-card-sm tl-live">
+              <div class="tl-ch"><span class="tl-m tl-m-live">M3</span><strong>Live Reconciliation</strong></div>
+              <p>Tool switched to live data ingestion. Present month reconciliations generated automatically. Real-time P&amp;L and leakage alerts.</p>
+              <div class="outcome-box">✅ Client sees live reconciliation from Day 1 of M3</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         SLIDE 9 — Beyond Reconciliation
-    ═══════════════════════════════════════════════ -->
-    <section class="slide dark-slide" id="s8">
+    <!-- ══════════════════════════════════
+         SLIDE 10 — Beyond Reconciliation
+    ══════════════════════════════════ -->
+    <section class="slide dark-slide" id="s9">
       <div class="slide-inner">
-        <div class="slide-header light">
-          <div class="slide-tag teal-tag">Platform Play</div>
-          <h2>Beyond Reconciliation — <em class="teal">The Full Platform Play</em></h2>
-          <p class="slide-subtitle light-sub">How we grow with your clients from Day 1 to their finance OS</p>
-        </div>
-        <div class="upsell-ladder">
-          <!-- Stage 3 — TOP -->
-          <div class="upsell-stage stage3">
-            <div class="stage-badge stage3-badge">Stage 3 — The Endgame</div>
-            <div class="stage-content">
-              <div class="stage-left">
-                <h3>One Dashboard. Every Platform. <em class="teal">Total Visibility.</em></h3>
-                <p>A unified MIS layer sitting on top of all platforms the client operates on.</p>
+        <div class="tag teal-tag">Platform Play</div>
+        <h2>Beyond Reconciliation — <span class="teal">The Full Platform Play</span></h2>
+        <p class="slide-sub light-sub">How we grow with your clients from Day 1 to their finance OS</p>
+
+        <div class="ladder">
+          <!-- Stage 3 -->
+          <div class="l-stage l-s3">
+            <span class="l-badge l-b3">Stage 3 — The Endgame</span>
+            <div class="l-body">
+              <div class="l-left">
+                <h3>One Dashboard. Every Platform. <span class="teal">Total Visibility.</span></h3>
                 <ul>
                   <li>Revenue by platform, channel, and SKU</li>
                   <li>Margin by outlet, geography, or product line</li>
                   <li>Leakage alerts, forecast vs. actual, and reconciliation status</li>
                 </ul>
-                <div class="stage-subline"><em>"The client's finance team stops living in Excel. This becomes their operating system."</em></div>
+                <em class="l-quote">"The client's finance team stops living in Excel. This becomes their operating system."</em>
               </div>
-              <div class="stage-right">
-                <div class="mis-dashboard">
-                  <div class="mis-tile"><span>GMV</span><strong>₹142Cr</strong></div>
-                  <div class="mis-tile green-tile"><span>Net Revenue</span><strong>₹118Cr</strong></div>
-                  <div class="mis-tile"><span>Platform Fees</span><strong>₹8.4Cr</strong></div>
-                  <div class="mis-tile amber-tile"><span>Contribution Margin</span><strong>23.6%</strong></div>
-                  <div class="mis-tile"><span>Forecast vs Actual</span><strong>+2.1%</strong></div>
+              <div class="l-right">
+                <div class="mis-grid">
+                  <div class="mis-t"><span>GMV</span><strong>₹142Cr</strong></div>
+                  <div class="mis-t teal-t"><span>Net Revenue</span><strong>₹118Cr</strong></div>
+                  <div class="mis-t"><span>Platform Fees</span><strong>₹8.4Cr</strong></div>
+                  <div class="mis-t gold-t"><span>Contribution Margin</span><strong>23.6%</strong></div>
+                  <div class="mis-t"><span>Forecast vs Actual</span><strong>+2.1%</strong></div>
                 </div>
-                <div class="stage-tag sticky-tag">This is the stickiest, highest-retention product</div>
+                <div class="l-tag sticky-t">This is the stickiest, highest-retention product</div>
               </div>
             </div>
           </div>
 
-          <div class="upsell-arrow">↑</div>
+          <div class="l-arrow">↑</div>
 
-          <!-- Stage 2 — MIDDLE -->
-          <div class="upsell-stage stage2">
-            <div class="stage-badge stage2-badge">Stage 2 — Intelligence Layer</div>
-            <div class="stage-content">
-              <div class="stage-left">
-                <h3>Forecasting Engine + <em class="teal">Deep Integrations</em></h3>
-                <div class="stage2-cols">
-                  <div>
-                    <strong>📈 Forecasting Engine</strong>
-                    <p>Platform-wise revenue and order volume forecasting. Demand planning by SKU, outlet, or channel.</p>
-                  </div>
-                  <div>
-                    <strong>🔗 Integrations</strong>
-                    <p>Connect with Tally, Zoho Books, Unicommerce, ERP systems. Push reconciled data directly — no manual exports.</p>
-                  </div>
+          <!-- Stage 2 -->
+          <div class="l-stage l-s2">
+            <span class="l-badge l-b2">Stage 2 — Intelligence Layer</span>
+            <div class="l-body">
+              <div class="l-left">
+                <h3>Forecasting Engine + <span class="teal">Deep Integrations</span></h3>
+                <div class="s2-two">
+                  <div><strong>📈 Forecasting Engine</strong><p>Platform-wise revenue forecasting. Demand planning by SKU, outlet, or channel.</p></div>
+                  <div><strong>🔗 Integrations</strong><p>Connect Tally, Zoho Books, Unicommerce, SAP. Push reconciled data directly — no manual exports.</p></div>
                 </div>
               </div>
-              <div class="stage-right">
-                <div class="integration-logos">
-                  <span class="int-chip"><img src="assets/logos/tally.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"/><span>Tally</span></span>
-                  <span class="int-chip"><img src="assets/logos/zoho.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"/><span>Zoho</span></span>
-                  <span class="int-chip"><img src="assets/logos/unicommerce.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"/><span>Unicommerce</span></span>
-                  <span class="int-chip"><img src="assets/logos/sap.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"/><span>SAP</span></span>
+              <div class="l-right">
+                <div class="int-chips">
+                  <span class="int-c">📒 Tally</span>
+                  <span class="int-c">☁️ Zoho Books</span>
+                  <span class="int-c">🔄 Unicommerce</span>
+                  <span class="int-c">🏭 SAP</span>
                 </div>
-                <div class="stage-tag">Sold as an add-on after Month 3</div>
+                <div class="l-tag">Sold as an add-on after Month 3</div>
               </div>
             </div>
           </div>
 
-          <div class="upsell-arrow">↑</div>
+          <div class="l-arrow">↑</div>
 
-          <!-- Stage 1 — BOTTOM -->
-          <div class="upsell-stage stage1">
-            <div class="stage-badge stage1-badge">Stage 1 — Core Product</div>
-            <div class="stage-content">
-              <div class="stage-left">
-                <h3>Reconciliation &amp; <em class="teal">Revenue Leakage Detection</em></h3>
+          <!-- Stage 1 -->
+          <div class="l-stage l-s1">
+            <span class="l-badge l-b1">Stage 1 — Core Product</span>
+            <div class="l-body">
+              <div class="l-left">
+                <h3>Reconciliation &amp; <span class="teal">Revenue Leakage Detection</span></h3>
                 <p>Automated reconciliation across all platforms. Real-time leakage alerts. Month-end closing in hours, not weeks.</p>
               </div>
-              <div class="stage-right">
-                <div class="platform-logos-row">
-                  <span class="platform-chip sm"><img src="assets/logos/zomato.png" alt="" onerror="this.style.display='none'"/> Zomato</span>
-                  <span class="platform-chip sm"><img src="assets/logos/swiggy.png" alt="" onerror="this.style.display='none'"/> Swiggy</span>
-                  <span class="platform-chip sm"><img src="assets/logos/amazon.png" alt="" onerror="this.style.display='none'"/> Amazon</span>
-                  <span class="platform-chip sm"><img src="assets/logos/flipkart.png" alt="" onerror="this.style.display='none'"/> Flipkart</span>
-                  <span class="platform-chip sm"><img src="assets/logos/blinkit.png" alt="" onerror="this.style.display='none'"/> Blinkit</span>
+              <div class="l-right">
+                <div class="plt-logos-row">
+                  <img src="assets/logos/Zomato.jpg" alt="Zomato" title="Zomato"/>
+                  <img src="assets/logos/Swiggy.jpg" alt="Swiggy" title="Swiggy"/>
+                  <img src="assets/logos/Amazon.jpg" alt="Amazon" title="Amazon"/>
+                  <img src="assets/logos/Flipkart.jpg" alt="Flipkart" title="Flipkart"/>
+                  <img src="assets/logos/blinkit.jpg" alt="Blinkit" title="Blinkit"/>
                 </div>
-                <div class="stage-tag entry-tag">This is where every client starts</div>
+                <div class="l-tag entry-t">This is where every client starts</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Bottom strip -->
-        <div class="partner-strip">
+        <div class="partner-band">
           "Every partner firm that brings us one client has a clear path to <strong>3x the contract value over 12 months</strong> — from reconciliation to forecasting to MIS."
         </div>
       </div>
