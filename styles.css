@@ -166,6 +166,8 @@ html, body {
 /* ═══════════════════════════
    SLIDE 2 — COMPANY BG
 ═══════════════════════════ */
+#s1.slide .slide-inner { justify-content:center; gap:20px; }
+
 .s2-header { display:flex; flex-direction:column; gap:10px; }
 
 .body-lg {
