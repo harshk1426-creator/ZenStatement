@@ -200,8 +200,9 @@ html, body {
 }
 .prod-card {
   background:var(--light); border:1.5px solid var(--border);
-  border-radius:20px; padding:28px 24px;
-  display:flex; flex-direction:column; gap:14px;
+  border-radius:20px; padding:22px 20px;
+  display:flex; flex-direction:column; gap:10px;
+  align-items:center; justify-content:center; text-align:center;
   transition:border-color .25s, box-shadow .25s, transform .25s;
   position:relative; overflow:hidden;
 }
